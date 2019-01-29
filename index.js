@@ -5,7 +5,7 @@ $(document).ready(() => {
   $(document.body).prepend($ROOT);
 
   /*
-  createItem returns an JQuery item that
+  createItem returns a JQuery item that
   can be attached to the DOM. 
   */
   function createItem(name, header, imgSrc, price, rating) {
