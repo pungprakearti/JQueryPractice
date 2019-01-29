@@ -55,6 +55,14 @@ $(document).ready(() => {
     //button
     let $form = $('<form>');
     let $button = $('<button>Add to cart</button>');
+
+    //on click, do not refresh page, and alert that 1
+    //  item has been added to the cart.
+    $button.on('click', evt => {
+      evt.preventDefault();
+      alert('Added 1 item to cart');
+    });
+
     $form.append($button);
     $cont.append($form);
 
